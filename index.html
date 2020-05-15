@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href = "nav.css">
+    <title>Home</title>
+  </head>
+  <body>
+
+  <div id="navbar">
+    <a class="active" href="javascript:void(0)">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="me.html">About Me</a>
+  </div>
+
+  <div class="header">
+    <h2>ONLINE PORTFOLIO</h2>
+    <p>DANIEL BANUELOS</p>
+  </div>
+
+  <div class="content">
+
+    <h3>WELCOME</h3>
+    <p style="text-align:center;">Welcome to my Online Portfolio. Here you can find information about all about me.
+    <br>Make use of the navigation bar by the top of the screen to check out my other stuff.<br>
+    Let me know how you like my Website, it was a lot of fun to create!</p>
+  </div>
+
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</html>

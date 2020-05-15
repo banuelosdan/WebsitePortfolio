@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href = "nav.css">
+    <title>Home</title>
+  </head>
+  <body>
+
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <a class="active" href="javascript:void(0)">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="me.html">About Me</a>
+  </div>
+
+  <!--div class="header">
+    <h2>Scroll Down</h2>
+    <p>Scroll down to see the sticky effect.</p>
+  </div-->
+  <table class = "resumeMain">
+    <tr>
+
+      <th colspan = "4">
+      <h2>COLLEGE RESUME</h2>
+      </th>
+    </tr>
+    <tr>
+
+      <td style = "text-align: center;">DANIEL BANUELOS</td>
+       <td style = "text-align: center;">(555) 555-5555</td>
+        <td style = "text-align: center;">123 RAND STREET</td>
+         <td style = "text-align: center;">MYEMAIL@GMAIL</td>
+    </tr>
+
+
+
+  </table>
+  <div class="content">
+    <section>
+      <h3 class="resumeHeader">Background</h3>
+      <p>Computer Science Major seeking an internship position. I have listed below
+        some of my skills and educational achievements. Including proficiency with
+        several coding languages and other soft skills that can be utilized in any
+        working environment
+      </p>
+        <hr>
+    </section>
+    <section>
+      <h3 class="resumeHeader">Experience</h3>
+      <p>I do not have any experience relating to the Computer Science field.<br>I only have experience under Amazon purely as labor. With my time there, I
+      accumulated listening skills, as well as organization and time efficiency.</p>
+
+        <hr>
+    </section>
+    <section>
+      <table style="width:100%">
+        <tr>
+          <th>Education</th>
+          <th>Skills</th>
+          <th>Awards</th>
+        </tr>
+        <tr>
+          <td>
+            <p style="text-align:center;">CSUF: 2018-Current</p>
+            <p style="text-align:center;">Computer Science</p>
+            <p style="text-align:center;">GPA: 3.5</p>
+            <hr>
+            <p style="text-align:center;">SBVC: 2016-2018</p>
+            <p style="text-align:center;">Computer Science</p>
+            <p style="text-align:center;">GPA: 3.7</p>
+
+
+
+
+          	</td>
+          <td>
+            <p style="text-align:center;">Microsoft Proficiency</p>
+          <p style="text-align:center;">Accuracy and attention to detail</p>
+          <p style="text-align:center;">Organized and punctual</p>
+          <p style="text-align:center;">Time management</p>
+          <p style="text-align:center;">Java/C++/X86/HTML/CSS/Javascript</p>
+          <p style="text-align:center;">Git profociency</p></td>
+          <td>
+
+            <p style="text-align:center;">UCR</p>
+            <p style="text-align:center;">Data Processing</p>
+            <p style="text-align:center;">Award of Completion</p>
+            <hr>
+            <p style="text-align:center;">CSUF</p>
+            <p style="text-align:center;">Dean's List</p>
+            <p style="text-align:center;">2018-Current</p>
+
+              </td>
+        </tr>
+</table>
+    </section>
+  </div>
+
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</html>

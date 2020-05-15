@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href = "nav.css">
+    <title>Home</title>
+  </head>
+  <body>
+
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a class="active" href="javascript:void(0)">About Me</a>
+  </div>
+
+  <div class="header">
+    <h2>ABOUT ME</h2>
+  </div>
+
+  <div class="content">
+    <h3>My Educational Journey</h3>
+    <p>I graduated from High School in 2016, without any idea of what I wanted to do in life.
+      My parents never grew up in an educational home, but wanted to change that for myself and my siblings.
+      I am the third oldest child of four. I have two older brothers who attended college, so I felt
+      that I should do the same.
+    <p>Still unaware of what I wanted to study, I blindly attended my local community college.
+    There I was able to venture into some of my interests. I was always fond of
+    Mathematics and Science, though I never delved into it much more than that. In my time at SBVC
+    I focused primarily on completing general math and science courses, hoping that I would take interest into
+    something less vague. It wasn't until my fourth semester there, I decided to major in Computer Science.</p>
+    <p>After my fourth semester at SBVC, I applied to CSUF and was admitted for the Fall of 2018.
+    I had only taken one CPSC course at my CC, so I was completely new to the subject. I had no prior education
+    experience, nor had I ever looked into it during my own time. It was an abrupt decision. Eventhough I feel
+    behind in a lot of my classes, I enjoy learning the topics and every semester I seem to be learning even more
+    material than the last. I am happy with my career choice and the destination I chose to pursure it.
+    </p>
+    <p>Cal State Fullerton has been an amazing school that has taught me a lot about being a better student.
+    I am now in my fourth year as a college student, and my second here at CSUF. I've since taken numerous
+    courses that have made me a better Programmer. I have also met great Professors, who are willing
+    to take time out of their day to teach me new things.</p>
+    <p>As it currently stands, I am expected to graduate in the Spring of 2021 with a Bachelors in Computer Science.
+      I am close to the finish line, but I know I still have a long way to go, event after graduation, before I
+      can be a great Programmer. I have so much to learn, but I am having the time of my life doing it.
+    </p>
+    <h3>Career Ambitions</h3>
+      <p>One of the main factors that persuaded me into majoring in Computer Science was because of my
+        interest in video games. So, naturally, I studied CS in hopes of one day becoming a Game Developer. Though
+        now that I've been in the CS field for a few years. I understand how unlikely that is. Although, it isn't
+        entirely impossible. But I mention this because, eventhough, game development was the only reason
+        I decided to major in CS, now that I've studied it for a while, I am actually open to a lot of jobs that
+        CS offer. From software development, to networking, to cybersecurity, or web development my range if interest
+        has widened tremendously.
+      </p>
+      <p>Unfortunately, as it now stands, I do not have my sights locked in on a specific job title, I am hoping
+        that my electives will help me broaden my search. But, I am open to any internships that can come my way to
+        really understand how it feels to work as a programmer.
+      </p>
+
+  </div>
+
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</html>
